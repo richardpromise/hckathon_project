@@ -49,13 +49,13 @@ export const Hero = () => {
               <div className="py-2 px-2 flex justify-center text-center mx-auto md:flex md:mx-0 md:justify-end md:w-11/12 ">
                 <img
                   src={whiteStar}
-                  className="relative w-4 left-32 top-6 md:w-auto md:-left-1/4"
+                  className="relative w-4 left-32 top-6 md:w-auto md:-left-1/4  z-50"
                   alt=""
                 />
                 {/* first purple flare */}
                 <img
                   src={centerpurpleflare}
-                  className=" hidden md:block md:absolute md:bottom-72 lg:absolute lg:block lg:right-20 lg:-bottom-9 xl:w-auto xl:left-1  "
+                  className=" hidden md:block md:absolute md:bottom-52 lg:absolute lg:block lg:right-20 lg:-bottom-9 xl:w-auto xl:left-1  "
                   alt=""
                 />
                 <img
@@ -75,12 +75,12 @@ export const Hero = () => {
                 />
                 <img
                   src={firstText}
-                  className="md:w-96 w-96 px-2 sm:w-auto lg:w-6/12"
+                  className="md:w-96 w-96 px-2 z-10 sm:w-auto lg:w-6/12"
                   alt=""
                 />
               </div>
 
-              <div className="py-4 px-2 flex mx-auto justify-end w-11/12 md:flex md:mx-0 sm:w-6/12 md:justify-end md:w-11/12  ">
+              <div className="py-4 z-50 px-2 flex mx-auto justify-end w-11/12 md:flex md:mx-0 sm:w-6/12 md:justify-end md:w-11/12  ">
                 <img
                   src={extra}
                   alt=""
@@ -93,7 +93,7 @@ export const Hero = () => {
           <div className=" relative flex flex-col md:flex md:flex-row">
             <img
               src={starGra}
-              className="hidden md:block md:absolute w-4 left-32 top-6  md:top-1 md:w-auto md:left-[700px]"
+              className="hidden md:block md:absolute w-4 left-32 top-6  md:top-1 md:w-auto md:left-[700px] "
               alt=""
             />
             <img
