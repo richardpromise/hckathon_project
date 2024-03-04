@@ -38,21 +38,22 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export const Hero = () => {
   // const [focus, isfocused] = React.useState(true);
+
   return (
     // container
     <div id="hero" className=" bg-primaryClor ">
-      <div>
+      {/* {section 1} */}
+      <section id="section1">
         <div className="md:overflow-hidden">
-          {/* first item */}
+          {/* first item setion 1 */}
           <div className="mx-auto pt-5 flex flex-col md:flex-col ">
             <div>
               <div className="py-2 px-2 flex justify-center text-center mx-auto md:flex md:mx-0 md:justify-end md:w-11/12 ">
                 <img
                   src={whiteStar}
-                  className="relative w-4 left-32 top-6 md:w-auto md:-left-1/4  z-50"
+                  className="relative w-4 left-32 top-6 md:w-auto md:-left-1/4  z-10"
                   alt=""
                 />
-                {/* first purple flare */}
                 <img
                   src={centerpurpleflare}
                   className=" hidden md:block md:absolute md:bottom-52 lg:absolute lg:block lg:right-20 lg:-bottom-9 xl:w-auto xl:left-1  "
@@ -89,8 +90,8 @@ export const Hero = () => {
               </div>
             </div>
           </div>
-          {/* Second item */}
-          <div className=" relative flex flex-col md:flex md:flex-row">
+          {/* Second item  section1*/}
+          <div className=" relative flex flex-col md:flex md:flex-row ">
             <img
               src={starGra}
               className="hidden md:block md:absolute w-4 left-32 top-6  md:top-1 md:w-auto md:left-[700px] "
@@ -101,8 +102,6 @@ export const Hero = () => {
               className="hidden  w-4 left-32 top-6  md:top-[500px] md:block md:absolute md:w-auto  md:left-[600px] xl:top-[400px] 2xl:top-[500px]"
               alt=""
             />
-            {/* container */}
-
             <img
               src={purpleLense}
               className="bottom-96  h-4/5 absolute md:hidden md:h-3/4 md:bottom-60 lg:hidden lg:bottom-44 "
@@ -171,10 +170,11 @@ export const Hero = () => {
           alt=""
         />
         <div className="  md:block h-[1px] bg-gray-500"></div>
-      </div>
+      </section>
+
       {/* section 2 */}
       <section id="advertTwo ">
-        <div className="flex m-auto px-10 pt-7 flex-col justify-center items-center lg:container md:flex-row md:justify-between lg:gap-[40px] md:gap-[20px] md:relative ">
+        <div className="flex m-auto px-10 pt-14 flex-col justify-center items-center lg:container md:flex-row md:justify-between lg:gap-[40px] md:gap-[20px] md:relative ">
           {/* touches big screen */}
           <img
             src={bigideaArrow}
@@ -225,7 +225,7 @@ export const Hero = () => {
               <img src={intro} className="w-[1200px]" alt="" />
             </div>
             <div className="pt-6 pb-5 md:max-w-[400px] lg:max-w-[600px]">
-              <p className="text-white font-[15px] md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px] ">
+              <p className="text-white  font-[15px] text-sm md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px] ">
                 our tech hackthon is a melting pot of visionaries, and it's
                 purpose is as clear as day: to shape the future. Weather you're
                 coding genius, a design maverick, or a concept wizard, you'll
@@ -241,6 +241,7 @@ export const Hero = () => {
           <img src={rightpurpleLense} className="relative bottom-40 " alt="" />
         </div>
       </section>
+
       {/* section 3 */}
       <section id="advertThree ">
         <div className="flex m-auto px-10 flex-col justify-center relative  items-center lg:container md:flex-row-reverse md:justify-between md:gap-[20px] ">
@@ -289,7 +290,7 @@ export const Hero = () => {
               <img src={rules} className="w-40" alt="" />
             </div>
             <div className="pt-6 md:max-w-[400px] lg:max-w-[600px]">
-              <p className="text-white font-[15px] md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px]">
+              <p className="text-white text-sm font-[15px] md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px]">
                 our tech hackthon is a melting pot of visionaries, and it's
                 purpose is as clear as day: to shape the future. Weather you're
                 coding genius, a design maverick, or a concept wizard, you'll
@@ -317,16 +318,13 @@ export const Hero = () => {
           <img src={starGra} className="relative bottom-[1100px] " alt="" />
         </div>
       </section>
+
       {/* section 4 */}
-      <section id="advertFour ">
+      <section id="advert3 ">
         <div className="flex m-auto pt-10 px-10 flex-col justify-center relative items-center md:flex-col md:justify-between md:gap-[20px] lg:flex-row 2xl:container ">
           {/* instruction */}
 
           <div className="relative pt-10 pb-2 lg:w-full ">
-            {/* <div className="hidden  md:block absolute -z-[9px] top-48 ">
-              <img src={eclipse} alt="" />
-            </div> */}
-
             <div className=" md:w-[600px]">
               <img src={pie} className="lg:w-[120%]" alt="" />
             </div>
@@ -344,7 +342,7 @@ export const Hero = () => {
             <div className="pt-6 md:max-w-full md:pr-32 lg:pr-0 xl:pr-32 lg:max-w-full ">
               <div className="text-center mx-auto px-3 flex flex-col space-y-4 md:px-0">
                 <div className="md:text-[17px]">
-                  <p className="text-white leading-8 shadow-black font-montserrat md:text-left">
+                  <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
                     <span className="text-small_textColor pr-1 text-[15px] font-medium md:text-left md:text-[17px]">
                       Inovation and creativity:
                     </span>
@@ -355,7 +353,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="md:text-[17px]">
-                  <p className="text-white leading-8 shadow-black font-montserrat md:text-left">
+                  <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
                     <span className="text-small_textColor pr-1 text-[15px] font-medium md:text-left md:text-[17px]">
                       Functionality:
                     </span>
@@ -367,7 +365,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="md:text-[17px]">
-                  <p className="text-white leading-8 shadow-black font-montserrat md:text-left">
+                  <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
                     <span className="text-small_textColor pr-1 text-[15px] font-medium md:text-left md:text-[17px]">
                       Impact ans Relevance:
                     </span>
@@ -379,7 +377,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="md:text-[17px]">
-                  <p className="text-white leading-8 shadow-black font-montserrat md:text-left">
+                  <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
                     <span className="text-small_textColor pr-1 text-[15px] font-medium md:text-left md:text-[17px]">
                       Technical Complexity:
                     </span>
@@ -391,7 +389,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="md:text-[17px]">
-                  <p className="text-white leading-8 shadow-black font-montserrat md:text-left">
+                  <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
                     <span className="text-small_textColor pr-1 text-[15px] font-medium md:text-left md:text-[17px]">
                       Adherence to Hackathon Rules:
                     </span>
@@ -431,8 +429,9 @@ export const Hero = () => {
           <img src={starGra} className="relative bottom-[1100px] " alt="" />
         </div>
       </section>
-      {/* section 5 */}
-      <section id="advertFour">
+
+      {/* section 5*/}
+      <section id="advert4">
         <div className="flex m-auto pt-10 px-10 flex-col justify-center relative items-center md:flex-col md:justify-between md:gap-[2px]  lg:px-16 lg:flex-row xl:px-14 2xl:container ">
           {/* instruction */}
 
@@ -449,7 +448,7 @@ export const Hero = () => {
               <div className="pt-6 md:max-w-full xl:pr-32 lg:max-w-full  ">
                 <div className="text-center mx-auto px-3 flex flex-col space-y-4 md:px-0">
                   <div>
-                    <p className="text-white pb-3 leading-8 shadow-black font-montserrat md:text-left md:text-[17px]">
+                    <p className="text-white pb-3  leading-8 shadow-black font-montserrat md:text-left md:text-[17px]">
                       We got answers to the questions that you might want to ask
                       about{" "}
                       <span className="font-medium">
@@ -460,78 +459,65 @@ export const Hero = () => {
                   <div className="flex flex-col space-y-6  text-left">
                     {/* questions */}
                     <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px] ">
-                      <p className=" text-white font-montserrat text-[15px] shadow-black md:text-[17px]">
+                      <p className=" text-white font-montserrat text-sm shadow-black md:text-[17px]">
                         Can i work on a project i started before the
                       </p>
                       <div className="flex justify-between items-center">
                         {" "}
-                        <p className="text-white ">hackathon?</p>
+                        <p className="text-white text-sm">hackathon?</p>
                         <div className="text-secondarColor text-2xl">
                           <a href="#">+</a>
                         </div>
                       </div>
                     </div>
 
-                    <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px]">
-                      <p className=" text-white font-montserrat text-[14px] text-left  shadow-black md:text-[17px]">
+                    <div className="border-b-[1px] border-solid text-sm border-secondarColor md:text-[17px]">
+                      <p className=" text-white font-montserrat text-sm text-left  shadow-black md:text-[17px]">
                         what happens if i need help during the
                       </p>
                       <div className="flex justify-between items-center">
                         {" "}
-                        <p className="text-white ">hackathon?</p>
+                        <p className="text-white text-sm">hackathon?</p>
                         <div className="text-secondarColor text-2xl">
                           <a href="#">+</a>
                         </div>
                       </div>
                     </div>
 
-                    <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px]">
-                      <p className=" text-white font-montserrat text-[14px] text-left  shadow-black md:text-[17px]">
+                    <div className="border-b-[1px] border-solid text-sm border-secondarColor md:text-[17px]">
+                      <p className=" text-white font-montserrat text-sm text-left  shadow-black md:text-[17px]">
                         What happens if i don't have an idea for
                       </p>
                       <div className="flex justify-between items-center">
                         {" "}
-                        <p className="text-white ">a project?</p>
+                        <p className="text-white text-sm">a project?</p>
                         <div className="text-secondarColor text-2xl">
                           <a href="#">+</a>
                         </div>
                       </div>
                     </div>
 
-                    <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px]">
-                      <p className=" text-white font-montserrat text-[14px] text-left  shadow-black md:text-[17px]">
+                    <div className="border-b-[1px] border-solid text-sm border-secondarColor md:text-[17px]">
+                      <p className=" text-white font-montserrat text-sm text-left  shadow-black md:text-[17px]">
                         Can i join a team of do i have to come
                       </p>
                       <div className="flex justify-between items-center">
                         {" "}
-                        <p className="text-white ">with one?</p>
+                        <p className="text-white text-sm">with one?</p>
                         <div className="text-secondarColor text-2xl">
                           <a href="#">+</a>
                         </div>
                       </div>
                     </div>
 
-                    <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px]">
-                      <p className=" text-white font-montserrat text-[14px] text-left  shadow-black md:text-[17px]">
+                    <div className="border-b-[1px] border-solid text-sm border-secondarColor md:text-[17px]">
+                      <p className=" text-white font-montserrat text-sm text-left  shadow-black md:text-[17px]">
                         What happenes after the hackathon
                       </p>
                       <div className="flex justify-between items-center">
                         {" "}
-                        <p className="text-white ">ends?</p>
+                        <p className="text-white text-sm ">ends?</p>
                         <div className="text-secondarColor text-2xl">
-                          <a href="#">+</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="border-b-[1px] border-solid border-secondarColor md:text-[17px]">
-                      <p className=" text-white font-montserrat text-[14px] text-left  shadow-black md:text-[17px]">
-                        Can i work on a project i started before the
-                      </p>
-                      <div className="flex justify-between items-center">
-                        {" "}
-                        <p className="text-white ">hackathon?</p>
-                        <div className="text-secondarColor text-2xl hover:cursor-pointer">
                           <a href="#">+</a>
                         </div>
                       </div>
@@ -561,7 +547,7 @@ export const Hero = () => {
         </div>
       </section>
 
-      {/* section 5 */}
+      {/* section 6 */}
       <section id="timeline " className="pt-10">
         <div className="flex flex-col justify-center items-center px-6 space-x-5 py-5 lg:items-center lg:justify-center ">
           {/* Timeline message */}
@@ -574,7 +560,7 @@ export const Hero = () => {
               />
             </div>
             <div>
-              <p className="montserrat text-center pb-10 text-white shadow-black leading-8 md:text-[17px] lg:absolute lg:w-[500px] lg:top-14 lg:-right-[275px]">
+              <p className="montserrat text-center pb-10 text-white text-sm shadow-black leading-8 md:text-[17px] lg:absolute lg:w-[500px] lg:top-14 lg:-right-[275px]">
                 {" "}
                 Here is the breakdown of the time we anticipate using for the
                 upcoming event.
@@ -599,7 +585,7 @@ export const Hero = () => {
                       {" "}
                       Hackathon Announcement
                     </p>
-                    <p className="text-white shadow-black text-[15px] leading-6 md:text-[17px] md:leading-7 md:pb-4">
+                    <p className="text-white shadow-black text-sm leading-6 md:text-[17px] md:leading-7 md:pb-4">
                       the getlinked tech hackathon 1.0 is formally announced to
                       the general public and teams begin to get ready to
                       register
@@ -687,9 +673,9 @@ export const Hero = () => {
               </div>
 
               <div className="relative flex flex-row ">
-                <div className=" mr-4 mt-5">
-                  <div className="h-[4px] bg-secondarColor w-28 rotate-90 absolute -left-11 top-12"></div>
-                  <div className="bg-secondarColor p5 rounded-full text-white text-center w-6 relative top-24 ">
+                <div className=" mr-4 ">
+                  <div className="h-[4px] bg-secondarColor w-36 rotate-90 absolute -left-[60px] top-16"></div>
+                  <div className="bg-secondarColor p5 rounded-full text-white text-center w-6 relative top-36 ">
                     5
                   </div>
                 </div>
@@ -699,7 +685,7 @@ export const Hero = () => {
                       {" "}
                       Getlinked Hackathon 1.0 officially Begins
                     </p>
-                    <p className="text-white shadow-black text-[15px] leading-6 pb-7 md:text-[17px] md:pt-5">
+                    <p className="text-white shadow-black text-[15px] leading-6 pb-2 md:text-[17px] md:pt-5">
                       Accepted teams can now procceed to build their ground
                       breaking skill driven solutons
                     </p>
@@ -710,9 +696,9 @@ export const Hero = () => {
                 </div>
               </div>
 
-              <div className="relative flex flex-row ">
-                <div className=" mr-4">
-                  <div className="h-[4px] bg-secondarColor w-28 rotate-90 absolute -left-11 top-12"></div>
+              <div className="relative flex flex-row pt-5 ">
+                <div className=" mr-4 pt-4">
+                  <div className="h-[4px] bg-secondarColor w-28 rotate-90 absolute -left-11 top-12 mt-5"></div>
                   <div className="bg-secondarColor p5 rounded-full text-white text-center w-6 relative top-28 ">
                     6
                   </div>

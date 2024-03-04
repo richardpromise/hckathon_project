@@ -9,7 +9,7 @@ import rectangle from "./imgs/contact-images/Rectangle 10.svg";
 import { Link, useLocation } from "react-router-dom";
 import done from "./imgs/contact-images/done.png";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Contact = () => {
   const [clicked, isClicked] = React.useState(false);
@@ -77,25 +77,38 @@ const Contact = () => {
       {/* small screen */}
 
       {/* done message */}
-      {clicked && (
-        <motion.div
-          onClick={() => isClicked(false)}
-          initial={{ scale: 0, opacity: 0, x: -100, y: -20 }}
-          animate={{ scale: 1, opacity: 1, x: 0, y: 0 }}
-          className="bg-black/80 top-0 right-0 h-full w-full fixed z-10 p-5 flex flex-col justify-center items-center "
-        >
-          <div>
-            <img src={done} className="w-40" alt="" />
-          </div>
-          <div className="text-white font-montserrat text-xl text-center  font-bold">
-            <p className="p-2"> </p>
-            <p className=" border-b-[6px] border-secondarColor leading-10">
-              {" "}
-              Your Questions are been reviewed. We will get back to you asap !!{" "}
-            </p>
-          </div>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {clicked && (
+          <motion.div
+            onClick={() => isClicked(false)}
+            initial={{ scale: 0, opacity: 0, x: -100, y: -20 }}
+            animate={{ scale: 1, opacity: 1, x: 0, y: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+            }}
+            exit={{
+              scale: 0,
+              opacity: 0,
+              x: -100,
+              y: -20,
+            }}
+            className="bg-black/80 top-0 right-0 h-full w-full fixed z-10 p-5 flex flex-col justify-center items-center "
+          >
+            <div>
+              <img src={done} className="w-40" alt="" />
+            </div>
+            <div className="text-white font-montserrat text-xl text-center  font-bold">
+              <p className="p-2"> </p>
+              <p className=" border-b-[6px] border-secondarColor leading-10">
+                {" "}
+                Your Questions are been reviewed. We will get back to you asap
+                !!{" "}
+              </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="flex flex-col justify-center px-7 items-center  lg:hidden gap-4 pt-5  relative md:px-20 md:pt-20">
         <div className=" w-full">
