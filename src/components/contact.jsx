@@ -10,6 +10,7 @@ import { Link, useLocation } from "react-router-dom";
 import done from "./imgs/contact-images/done.png";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import thumbsup from "./imgs/register-page/3d-graphic-designer-showing-thumbs-up-png 1.svg";
 
 const Contact = () => {
   const [clicked, isClicked] = React.useState(false);
@@ -62,13 +63,11 @@ const Contact = () => {
                   <Link to={"/contact"}>Contact</Link>
                 </p>
               </div>
-
-              <a
-                href="/"
-                className="py-2 px-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-              >
-                Register
-              </a>
+              <Link to={"/register"}>
+                <p className="py-2 px-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                  Register
+                </p>
+              </Link>
             </div>
           </div>
         </nav>
@@ -90,13 +89,13 @@ const Contact = () => {
             exit={{
               scale: 0,
               opacity: 0,
-              x: -100,
+              x: 100,
               y: -20,
             }}
             className="bg-black/80 top-0 right-0 h-full w-full fixed z-10 p-5 flex flex-col justify-center items-center "
           >
             <div>
-              <img src={done} className="w-40" alt="" />
+              <img src={thumbsup} className="" alt="" />
             </div>
             <div className="text-white font-montserrat text-xl text-center  font-bold">
               <p className="p-2"> </p>

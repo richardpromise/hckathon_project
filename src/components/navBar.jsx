@@ -17,7 +17,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="navbar bg-primaryClor  ">
+    <div className="navbar bg-primaryClor">
       {/* Nav bar */}
       <nav className="py-6">
         {/* Nav bar container */}
@@ -78,7 +78,7 @@ export const NavBar = () => {
                 transition={{
                   type: "spring",
                 }}
-                className="bg-black/80 fixed top-0 left-0 h-full w-full  z-50"
+                className="bg-black/80 fixed top-0 left-0 h-full w-full  z-50 "
               >
                 <div className="fixed bg-primaryClor p-11 right-0 top-0 w-72 px-6 h-screen duration-[0.5s] ">
                   <div className="flex flex-col space-y-9 gap-3 text-white font-montserrat z-50">

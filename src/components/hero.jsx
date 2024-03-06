@@ -224,7 +224,7 @@ export const Hero = () => {
             <div className=" md:hidden pt-5">
               <img src={intro} className="w-[1200px]" alt="" />
             </div>
-            <div className="pt-6 pb-5 md:max-w-[400px] lg:max-w-[600px]">
+            <div className="pt-6 pb-5 md:max-w-[400px] lg:max-w-[600px] z-10">
               <p className="text-white  font-[15px] text-sm md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px] ">
                 our tech hackthon is a melting pot of visionaries, and it's
                 purpose is as clear as day: to shape the future. Weather you're
@@ -289,7 +289,7 @@ export const Hero = () => {
             <div className=" md:hidden pt-1">
               <img src={rules} className="w-40" alt="" />
             </div>
-            <div className="pt-6 md:max-w-[400px] lg:max-w-[600px]">
+            <div className="pt-6 md:max-w-[400px] lg:max-w-[600px] z-10">
               <p className="text-white text-sm font-[15px] md:text-left text-center font-montserrat shadow-black leading-8 md:text-[17px]">
                 our tech hackthon is a melting pot of visionaries, and it's
                 purpose is as clear as day: to shape the future. Weather you're
@@ -339,7 +339,7 @@ export const Hero = () => {
               <img src={criteriaSmall} className="w-52" alt="" />
             </div>
 
-            <div className="pt-6 md:max-w-full md:pr-32 lg:pr-0 xl:pr-32 lg:max-w-full ">
+            <div className="pt-6 md:max-w-full md:pr-32 lg:pr-0 xl:pr-32 lg:max-w-full z-10">
               <div className="text-center mx-auto px-3 flex flex-col space-y-4 md:px-0">
                 <div className="md:text-[17px]">
                   <p className="text-white leading-8 text-sm shadow-black font-montserrat md:text-left">
