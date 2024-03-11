@@ -31,10 +31,18 @@ import centerpurpleflare from "./imgs/section5/Purple-Lens-Flare-PNG (3).svg";
 import centerQuestionMark from "./imgs/section4/_ (1).svg";
 import smallQuestionMark from "./imgs/section4/_ (2).svg";
 import numbers from "./imgs/section5/numbers.svg";
+import prizes from "./imgs/section-seven/Prizes and Rewards.svg";
+import medals from "./imgs/section-seven/Rewards.svg";
+import cup from "./imgs/section-seven/9486889 1.svg";
+import purpleLense7 from "./imgs/section-seven/Purple-Lens-Flare-PNG (7).svg";
 import timelineMessage from "./imgs/section5/Timeline (1).svg";
 import bigTimeLine from "./imgs/section5/Timeline.svg";
+import centerpurpleflare7 from "./imgs/section-seven/Purple-Lens-Flare-PNG (8).svg";
 import { Link } from "react-router-dom";
+import sponsor from "./imgs/partners/Partners and Sponsors.svg";
 import { motion, AnimatePresence } from "framer-motion";
+import partnersText from "./imgs/partners/Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors.svg";
+import partnersimg from "./imgs/partners/Partners list.svg";
 
 export const Hero = () => {
   // const [focus, isfocused] = React.useState(true);
@@ -727,6 +735,86 @@ export const Hero = () => {
           <div className="hidden lg:block lg:px-9">
             <div>
               <img src={bigTimeLine} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 7 */}
+      <section id="prizes" className="py-20 relative xl:pt-32">
+        <div className="absolute top-0 left-0 hidden lg:block 2xl:hidden">
+          <img src={centerpurpleflare7} className="w-[700px]" alt="" />
+        </div>
+        <div className="flex items-center justify-center">
+          {/* small screen */}
+          <div className="flex flex-col px-5 items-center gap-4 justify-center relative lg:hidden">
+            <div className="absolute top-0 left-0 md:hidden">
+              <img src={purpleLense7} alt="" />
+            </div>
+            <div>
+              <img src={prizes} className=" w-32 md:w-40" alt="" />
+            </div>
+            <div className="text-center text-sm">
+              <p className="text-white font-montserrat shadow-black md:pb-3">
+                Highlight of the prizes of rewards for the winner
+              </p>
+              <p className="text-white font-montserrat shadow-black">
+                and for the particpants
+              </p>
+            </div>
+            <div className="pt-10 z-10">
+              <img src={cup} className="md:w-96" alt="" />
+            </div>
+            <div className="pt-10 z-10">
+              <img src={medals} className="w-96" alt="" />
+            </div>
+          </div>
+
+          {/* large screen */}
+          <div className="hidden lg:flex lg:flex-col justify-center items-center w-full container gap-5   relative">
+            <div className="absolute top-0 left-0 hidden  2xl:block">
+              <img src={centerpurpleflare7} className="w-[700px]" alt="" />
+            </div>
+            <div className="flex justify-end items-end w-full pr-28 2xl:pr-64">
+              <div>
+                <div className="pb-5">
+                  <img src={prizes} className="w-36 2xl:w-40 " alt="" />
+                </div>
+                <div className="text-left ">
+                  <p className="text-white font-montserrat shadow-black md:pb-1">
+                    Highlight of the prizes of rewards for the winner
+                  </p>
+                  <p className="text-white font-montserrat shadow-black">
+                    and for the particpants
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center gap-6 w-full z-10 p-3">
+              <div>
+                <img src={cup} className="w-96 xl:w-[600px] " alt="" />
+              </div>
+              <div>
+                <img src={medals} className="w-[500px] xl:w-[700px]" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 8 */}
+      <section id="policy" className="py-20 relative xl:pt-3">
+        <div className="flex justify-center items-center">
+          {/* small screen */}
+          <div className="flex flex-col lg:hidden justify-center items-center gap-3">
+            <div>
+              <img src={sponsor} alt="" />
+            </div>
+            <div>
+              <img src={partnersText} alt="" />
+            </div>
+            <div>
+              <img src={partnersimg} alt="" />
             </div>
           </div>
         </div>
